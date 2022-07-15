@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+    <head>
+        <title>jogo de damas em javascript e html</title> 
+        <link rel = "stylesheet" href = "damas.css">
+    </head>
+    <body>
+        <!-- Div responsavel pelo tabuleiro -->
+        <div>
+            <!-- Tabela 8 x 8 onde cada lemento na tabela representa um espaço no tabuleiro -->
+            <table>
+                <tr>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_vermelha" id="0"></span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_vermelha" id="1"></span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_vermelha" id="2"></span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_vermelha" id="3"></span></td>
+                </tr>
+                <tr>
+                    <td class="espaco_preto"><span class="peca_vermelha" id="4" ><span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_vermelha" id="5" ><span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_vermelha" id="6" ><span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_vermelha" id="7" ><span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                </tr>
+                <tr>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_vermelha" id="8"></span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_vermelha" id="9"></span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_vermelha" id="10"><span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_vermelha" id="11"><spanp</td>
+                </tr>
+                <tr>
+                    <td class="espaco_sem_peca espaco_preto"></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_sem_peca espaco_preto"></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_sem_peca espaco_preto"></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_sem_peca espaco_preto"></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                </tr>
+                <tr>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_sem_peca espaco_preto"></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_sem_peca espaco_preto"></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_sem_peca espaco_preto"></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_sem_peca espaco_preto"></td>
+                </tr>
+                <tr>
+                    <td class="espaco_preto"><span class="peca_preta" id="12" ></span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_preta" id="13" ></span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_preta" id="14" ></span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_preta" id="15" ></span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                </tr>
+                <tr>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_preta" id="16"></span</td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_preta" id="17"></span</td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_preta" id="18"></span</td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_preta" id="19"></span</td>
+                </tr>
+                <tr>
+                    <td class="espaco_preto"><span class="peca_preta" id="20" ></span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_preta" id="21" ></span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_preta" id="22" ></span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                    <td class="espaco_preto"><span class="peca_preta" id="23" ></span></td>
+                    <td class="espaco_sem_peca espaco_branco"></td>
+                </tr>
+            </table>
+        </div>
+        <div class = "menu_turno">
+            <div class = "turno_vermelho">
+                Turno jogador Vermelho
+            </div>
+            <p class="divisor"> | </p>
+            <div class = "turno_preto">
+                Turno jogador Preto
+            </div>
+        </div>
+        <script type="text/javascript" src = "damas.js"> </script>
+    </body>
+</html>

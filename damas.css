@@ -1,0 +1,75 @@
+div {
+  justify-content: center;
+  display: flex;
+}
+
+td.espaco_branco {
+  width: 65px;
+  height: 65px;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  background-color: rgb(207, 160, 102);
+}
+
+td.espaco_preto {
+  width: 65px;
+  height: 65px;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  background-color: rgb(147, 94, 33);
+}
+
+.peca_preta {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 12px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+.peca_vermelha {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 12px;
+  background-color: red;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+.rei.peca_vermelha {
+  background-color: rgb(183, 0, 255);
+}
+.rei.peca_preta {
+  background-color: rgb(0, 0, 140);
+}
+
+.menu_turno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.turno_vermelho {
+  display: flex;
+  color: red;
+}
+
+.turno_preto {
+  display: flex;
+  color: black;
+}
+
+.divisor {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 1000;
+  color: rgb(207, 160, 102);;
+}
+
+.color-gray {
+  color: gray !important;
+}
