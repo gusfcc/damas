@@ -14,7 +14,7 @@ let tabuleiro = [
 let tabuleiroHTML = document.querySelectorAll("td");
 let pecasVermelhas = document.querySelectorAll(".peca_vermelha");
 let pecasPretas = document.querySelectorAll(".peca_preta");
-let menuTurno = document.querySelector("menu_turno");
+let menuTurno = document.querySelector(".menu_turno");
 let pecasJodador; // Recebera as peças do jogador do turno atual
 
 /* Criando as variaveis do jogo (Numero de peças de cada jogador, turno atual, etc.) */
